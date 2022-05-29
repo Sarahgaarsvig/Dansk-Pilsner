@@ -1,0 +1,607 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header{
+    width:100%;
+    height:90px;
+  
+    display:flex;
+    justify-content:space-around;
+  
+    position:sticky;
+    background-color:#Ffa94f;
+  }
+
+  header > #logo{
+    display: flex;
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+  }
+
+
+  /* spacing af navbaren */
+  nav{
+    display: flex;
+    gap: 30px;
+    padding-left:100px;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+
+  /* dropdown styling i navbaren */
+  .dropbtn {
+    background-color: #Ffa94f;
+    color: black;
+    font-size: 12pt;
+    border: none;
+    font-family:'Didact Gothic', sans-serif;
+    letter-spacing: 1pt;
+  }
+  
+  
+  /* display none, da content i dropdown skal være gemt væk når man ikke hover over */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+  }
+  
+
+  .dropdown-content a {
+    color: black;
+    background-color: #Ffa94f;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family:'Didact Gothic', sans-serif;
+    font-weight: 200;
+  }
+  
+  /* Skrifter baggrundfarven når man hover */
+  .dropdown-content a:hover {
+      background-color: #FF7B97;
+    }
+  
+  /* display bliver ændret til blok, for at vise content når man hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  /* BURGERMENU */
+
+  #bodyburger{
+    background-color: #Ffa94f;
+  }
+
+  #bodyburger > #burgermenuexit > img{
+    width: 40px;
+  }
+  #mobilemenubutton > img{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 60px;
+    height: 60px;
+  }
+
+  #burgermenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 10%;
+  }
+
+/* Landing page */
+  
+#hero{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color:#feb3c3;
+  
+}
+
+/* Ingredienser */
+#nachos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#nachos > img{
+  max-width: 550px;
+  height: 350px;
+  padding-left:20px;
+  padding-right: 20px;
+}
+
+#ingredienser2{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+#sortimentoverskrift{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color:#Ffa94f;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#udvalgresponsiv{
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.responsive {
+  padding: 5px;
+  float:left;
+  width: 20%;
+  padding-bottom: 40px;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+div.desc {
+  width: 100%;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+  font-size: 12pt;
+  font-family:'Didact Gothic', sans-serif;
+  padding-bottom: 30px;
+}
+
+
+/* Konkurrencen, 3 cards */
+
+#koncerten{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#koncerten > h2{
+  color:#Ffa94f;
+}
+
+#koncerten > #optræden{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#cards{
+  width: 100%;
+  display:flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+#cards > #indkøb{
+  width: 100%;
+}
+
+#cards > #indkøb > img{
+width: 350px;
+padding-left: 20px;
+padding-right: 20px;
+
+}
+
+#cards > div {
+  text-align: center;
+}
+
+#cards > div > h2{
+  color:#Ffa94f;
+}
+
+#cards > div > img{
+  width: 250px;
+  height: 240px;
+  padding: 10px;
+}
+
+#SU > div{
+  text-align: center;
+  padding-bottom: 30px;
+  color:#Ffa94f;
+}
+
+
+
+
+/* HISTORIEN BAG DP */
+
+.flex-container {
+  display: flex;
+  text-align: left;
+}
+
+.flex-container > div {
+  margin: 20px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.flex-container > div > img {
+    align-items: right;
+    max-width: 450px;
+    max-height: 450px;
+}
+
+
+/* Limited Edition 2022 */
+
+#klassiskvsny{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#klassiskvsny > .fade-in-fade-out > #flaske1, #flaske2{
+  height: 400px;
+}
+
+#flaske1{
+  margin-right:80px;
+}
+
+#flaske2{
+  margin-left:80px;
+}
+
+.tekstflasker{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 30px;
+  margin-left:60px;
+  margin-right:60px;
+}
+
+
+
+/* FOOTER */
+
+footer{
+    padding-top:50px;
+    min-height:300px;
+    width:100%;
+    background-color: #feb3c3;
+    text-align: left;
+  
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid #Ffa94f ;
+  }
+  
+  footer > div > p{
+    margin-top:20px;
+    margin-bottom:20px;
+    color:black;
+    text-align: left;
+    font-size: 10pt;
+  }
+  
+  footer > div > p > a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  
+  footer > .down > a > img{
+    max-height:50px;
+    margin-top:20px;
+  }
+  
+  
+  /* KONTAKTFORMULAR */
+  
+  aside{
+    display:flex;
+    flex-direction: column;
+    float:right;
+  }
+  
+  aside > div{
+    float:right;
+    margin-right:70px;
+    padding-top:20px;
+  }
+  
+  aside > div > p{
+    padding-bottom:20px;
+  }
+  
+  /* Generelle regler for hele formularen */
+  input[type=text], select, textarea{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing:border-box;
+    margin-top: 6px; 
+    margin-bottom: 10px; 
+    resize: vertical;
+    font-family: 'Didact Gothic', sans-serif;
+  }
+  
+  /* Styling af "send besked" knappen */
+  input[type=submit] {
+    background-color:white;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* hover på "send knappen"*/
+  input[type=submit]:hover {
+    background-color:#Ffa94f;
+  }
+  
+  /* baggrundsfarve og padding på kontaktformularen */
+  .contactcontainer {
+    border-radius: 2px;
+    background-color: #FF7B97;
+    padding: 6px;
+    font-family:'Didact Gothic', sans-serif;
+    margin-bottom: 30px;
+  }
+  
+/* ANIMATIONER */
+@keyframes fade-inout{
+  0%{opacity: 1;}
+  100%{opacity: 0;}
+}
+
+.fade-in-fade-out{
+  animation: fade-inout 8s infinite alternate;
+}
+
+/* MEDIA QUERIES */
+
+/* TIL LAPTOP */
+@media only screen and (min-width:1000px){
+
+  #mobilemenubutton{
+    display: none;
+  }
+}
+
+/* TIL SMARTPHONES */
+@media only screen and (max-width:500px){
+
+  /* HEADER */
+  #desktopmenu{
+    display: none;
+  }
+
+
+  /* hero */
+  #hero > h5{
+    font-size: 13pt;
+  }
+
+  /* Historien bag */
+  .flex-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-container > div > p,h1{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flex-container > div > img{
+    max-width: 280px;
+    display: flex;
+    align-items: center;
+  }
+
+  .flex-container > div > #skåliøller{
+    max-width: 100%;
+  }
+
+  /* INGREDIENSER */
+  #nachos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #nachos > #glas{
+    padding-bottom: 20px;
+  }
+
+  #ingredienser2 > h1{
+    font-size: 28px;
+  }
+
+  #ingredienser2 > h3{
+    font-size: 20px;
+  }
+
+  #ingredienser2 > h4{
+    font-size: 16px;
+  }
+
+  #sortimentoverskrift > h3{
+    font-size: 22px;
+  }
+
+  #udvalgresponsive{
+    display: flex;
+    flex-direction: column;
+    padding-left: 22%;
+    padding-right: 22%;
+  }
+
+  
+  /* KONKURRENCEN */
+
+  #koncerten > h2{
+    font-size: 24px;
+  }
+  #koncerten > h4{
+    font-size: 12px;
+  }
+
+  #koncerten > h1{
+    font-size: 24px;
+  }
+
+  #cards{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #cards > .indkøb{
+    padding: 5px;
+  }
+
+  #cards > .indkøb > h2{
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+  }
+
+  #cards > .indkøb > p{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+  }
+
+  #SU > div > h3{
+    font-size: 20px;
+  }
+
+  /* LIMITED EDITION */
+  #klassiskvsny{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #klassiskvsny > .tekstflasker >h1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  #klassiskvsny > .tekstflasker > p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  #klassiskvsny > .tekstflasker > h4{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  #klassiskvsny > .fade-in-fade-out> img{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+
+  
+  /* FOOTER */
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    
+}
+
+
+
+
+/* FONTS */
+
+h1{ 
+  font-family:'Bad Script', cursive; 
+  font-size: 40px;  
+  color: #f78409;                                    
+}
+
+h2{
+  font-family:'Didact Gothic', sans-serif;
+  font-size: 30pt;
+}
+
+h3{
+  font-family:'Didact Gothic', sans-serif;
+  font-size: 20pt;
+}
+
+h4{
+    font-family:'Didact Gothic', sans-serif;
+    font-size: 15pt;
+}
+
+h5{
+  color: white;
+  font-family:'Bad Script', cursive; 
+  font-size: 29pt;
+}
+
+h6{
+  color: #f78409;
+  font-size: 8px;
+  background-color: #feb3c3;
+}
+
+
+
+a{
+  color:#f78409;
+  text-decoration:underline;
+}
+
+p{
+  font-family:'Didact Gothic', sans-serif;
+  font-size: 16px;
+}
